@@ -1,28 +1,32 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#090909">
   <title>Caliversity — 2nd Anniversary</title>
-  <meta name="description" content="See what the Caliversity community is bringing to our 2nd anniversary. Add your item and share it with everyone.">
+  <meta name="description"
+    content="See what the Caliversity community is bringing to our 2nd anniversary. Add your item and share it with everyone.">
   <!-- Telegram/Open Graph preview: keep preview-image.png in the public root/assets path after deployment. -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Caliversity — 2nd Anniversary">
-  <meta property="og:description" content="Show us what you're bringing. Add your item to the Caliversity community showcase!">
-  <meta property="og:image" content="https://YOUR-DOMAIN/assets/preview-image.png">
+  <meta property="og:description"
+    content="Show us what you're bringing. Add your item to the Caliversity community showcase!">
+  <meta property="og:image" content="https://caliversity-anniversary5.vercel.app/">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Caliversity — 2nd Anniversary">
   <meta name="twitter:description" content="Show us what you're bringing.">
-  <meta name="twitter:image" content="https://YOUR-DOMAIN/assets/preview-image.png">
+  <meta name="twitter:image" content="https://caliversity-anniversary5.vercel.app/">
   <link rel="icon" href="assets/caliversity-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="js/config.js"></script>
   <script src="js/app.js" defer></script>
 </head>
+
 <body>
   <header class="topbar">
     <a class="brand" href="#" aria-label="Caliversity home">
@@ -39,7 +43,8 @@
         <p class="eyebrow">STRONGER TOGETHER · EST. 2024</p>
         <h1>Caliversity<br><span>2nd Anniversary</span></h1>
         <p class="hero-tagline">Show us what you're bringing!</p>
-        <p class="hero-copy">Let's make our 2nd anniversary even more special — share the items you're bringing with the community.</p>
+        <p class="hero-copy">Let's make our 2nd anniversary even more special — share the items you're bringing with the
+          community.</p>
         <a class="button button-light" href="#submit">Add your item <span aria-hidden="true">↗</span></a>
       </div>
       <div class="hero-stamp">2 YEARS<br><strong>CALIVERSITY</strong></div>
@@ -48,12 +53,16 @@
     <section class="content-grid">
       <section class="panel form-panel" id="submit">
         <div class="section-heading">
-          <div><p class="eyebrow">BE PART OF THE BOARD</p><h2>Submit your item</h2></div>
+          <div>
+            <p class="eyebrow">BE PART OF THE BOARD</p>
+            <h2>Submit your item</h2>
+          </div>
           <span class="heading-icon" aria-hidden="true">＋</span>
         </div>
         <form id="item-form">
           <label for="member-name">Your name / nickname <span class="required">*</span></label>
-          <input id="member-name" name="name" type="text" maxlength="40" placeholder="e.g. John, GymBro22" required autocomplete="nickname">
+          <input id="member-name" name="name" type="text" maxlength="40" placeholder="e.g. John, GymBro22" required
+            autocomplete="nickname">
 
           <label for="item-name">Item you'll bring <span class="required">*</span></label>
           <input id="item-name" name="item" type="text" maxlength="90" placeholder="e.g. Resistance bands" required>
@@ -63,7 +72,8 @@
             <div class="category-options">
               <label class="category-option">
                 <input type="radio" name="category" value="Calisthenic gear">
-                <span class="category-card"><img src="assets/icons/calisthenics.svg" alt=""><b>Calisthenic<br>Gear</b></span>
+                <span class="category-card"><img src="assets/icons/calisthenics.svg"
+                    alt=""><b>Calisthenic<br>Gear</b></span>
               </label>
               <label class="category-option">
                 <input type="radio" name="category" value="Tech">
@@ -88,7 +98,8 @@
             <input id="media-file" type="file" accept="image/jpeg,image/png,image/webp,video/mp4,video/webm">
           </label>
           <div id="file-preview" class="file-preview" hidden></div>
-          <button class="button button-submit" id="submit-button" type="submit">Post to community board <span aria-hidden="true">↗</span></button>
+          <button class="button button-submit" id="submit-button" type="submit">Post to community board <span
+              aria-hidden="true">↗</span></button>
           <p class="form-note">Your post will be visible to anyone with this website link.</p>
           <div id="form-status" class="status" role="status" aria-live="polite"></div>
         </form>
@@ -96,13 +107,19 @@
 
       <section class="panel showcase-panel" id="showcase">
         <div class="section-heading showcase-heading">
-          <div><p class="eyebrow">WHAT EVERYONE'S BRINGING</p><h2>Community showcase</h2></div>
+          <div>
+            <p class="eyebrow">WHAT EVERYONE'S BRINGING</p>
+            <h2>Community showcase</h2>
+          </div>
           <span class="live-pill"><i></i> LIVE BOARD</span>
         </div>
         <div class="toolbar">
           <p id="post-count">Loading community posts…</p>
           <label class="sort-label" for="sort-posts">Sort
-            <select id="sort-posts"><option value="newest">Latest first</option><option value="oldest">Oldest first</option></select>
+            <select id="sort-posts">
+              <option value="newest">Latest first</option>
+              <option value="oldest">Oldest first</option>
+            </select>
           </label>
         </div>
         <div id="post-grid" class="post-grid" aria-live="polite">
@@ -115,4 +132,5 @@
   <footer><span>CALIVERSITY</span><span>2ND ANNIVERSARY</span><span>STRONGER TOGETHER</span></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
+
 </html>
